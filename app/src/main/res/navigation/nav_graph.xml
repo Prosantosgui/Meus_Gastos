@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/criarDespesasFragment"
+        android:name="br.edu.infnet.meusgastos.main.ui.CriarDespesasFragment"
+        android:label="fragment_criar_despesa"
+        tools:layout="@layout/fragment_criar_despesa" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="br.edu.infnet.meusgastos.main.ui.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_criarDespesasFragment"
+            app:destination="@id/criarDespesasFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_editarDespesaFragment"
+            app:destination="@id/editarDespesaFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_moedasFragment"
+            app:destination="@id/moedasFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_resumoFragment"
+            app:destination="@id/resumoFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_chartFragment"
+            app:destination="@+id/chartFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/editarDespesaFragment"
+        android:name="br.edu.infnet.meusgastos.main.ui.EditarDespesaFragment"
+        android:label="fragment_editar_despesa"
+        tools:layout="@layout/fragment_editar_despesa" />
+    <fragment
+        android:id="@+id/moedasFragment"
+        android:name="br.edu.infnet.meusgastos.main.ui.MoedasFragment"
+        android:label="fragment_moedas"
+        tools:layout="@layout/fragment_moedas" />
+    <fragment
+        android:id="@+id/resumoFragment"
+        android:name="br.edu.infnet.meusgastos.main.ui.ResumoFragment"
+        android:label="fragment_resumo"
+        tools:layout="@layout/fragment_resumo" />
+    <fragment
+        android:id="@+id/chartFragment"
+        android:name="br.edu.infnet.meusgastos.ChartFragment"
+        android:label="fragment_chart"
+        tools:layout="@layout/fragment_chart" />
+</navigation>

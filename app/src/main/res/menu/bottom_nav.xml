@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Início"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_24"
+        />
+    <item android:title="Moedas"
+        android:id="@+id/moedas"
+        android:icon="@drawable/cat_contas"
+        />
+    <item android:title="Resumo"
+        android:id="@+id/resumo"
+        android:icon="@drawable/ic_receipt"
+        />
+    <item android:title="Gráfico"
+        android:id="@+id/grafico"
+        android:icon="@drawable/ic_chart_24"
+        />
+
+</menu>
