@@ -11,7 +11,7 @@
 .externalNativeBuild
 .cxx
 .gradle
-
+local.properties
 
 
 # Built application files
